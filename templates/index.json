@@ -12,30 +12,15 @@
     "image_with_text_overlay_ApjxTB": {
       "type": "image-with-text-overlay",
       "blocks": {
-        "subheading_NRYafL": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
-        "heading_aXb9iG": {
-          "type": "heading",
-          "settings": {
-            "text": "Image with text overlay",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_96kU4E": {
+        "richtext_VJVD4H": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "<h1><strong>IMAGES FILLED WITH NOSTALGIC VIBES.</strong></h1>"
           }
         }
       },
       "block_order": [
-        "subheading_NRYafL",
-        "heading_aXb9iG",
-        "richtext_96kU4E"
+        "richtext_VJVD4H"
       ],
       "name": "Image with text overlay",
       "settings": {
@@ -43,30 +28,111 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "image": "shopify://shop_images/WhatsApp_Image_2026-04-24_at_11.18.47_1.jpg",
+        "mobile_image": "shopify://shop_images/WhatsApp_Image_2026-04-24_at_11.18.47_1.jpg",
+        "mobile_text_position": "place-self-start text-start",
+        "desktop_text_position": "sm:place-self-center-start sm:text-start",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "overlay_opacity": 0
       }
     },
-    "logo_list_grNMFU": {
-      "type": "logo-list",
-      "name": "Logo list",
+    "multi_column_jmaECe": {
+      "type": "multi-column",
+      "blocks": {
+        "item_RMdWiD": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<p>NO SCREEN</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_VWj7iy": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<p>NO CAMERA ROLL</p><p></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_hH8bWe": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<p>VINTAGE STYLE FILM</p><p></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_BDkM4n": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<p>PRE LOADED STORAGE </p><p></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_tp49y8": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<p>RECHARGEABLE BATTERY</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_g4yWHC": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<p>ECO FRIENDLY</p><p></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_RMdWiD",
+        "item_VWj7iy",
+        "item_hH8bWe",
+        "item_BDkM4n",
+        "item_tp49y8",
+        "item_g4yWHC"
+      ],
+      "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_mobile": true,
-        "title": "Logo list",
-        "content": "",
+        "stack_on_mobile": false,
+        "gap": "medium",
         "text_alignment": "start",
-        "items_per_row": 5,
+        "subheading": "",
+        "title": "",
+        "content": "",
         "background": "",
         "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "logo_item_background": "",
-        "logo_item_border": ""
+        "text_color": ""
       }
     },
     "slideshow_LaXzBk": {
@@ -78,8 +144,8 @@
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "Tell your story",
-            "title": "Slide 1",
+            "subheading": "",
+            "title": "",
             "heading_tag": "h0",
             "button_text": "",
             "button_link": "",
@@ -87,35 +153,14 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30,
-            "background": "",
-            "background_gradient": ""
-          }
-        },
-        "image_pjBFnV": {
-          "type": "image",
-          "settings": {
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "Tell your story",
-            "title": "Slide 2",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30,
+            "overlay_opacity": 0,
             "background": "",
             "background_gradient": ""
           }
         }
       },
       "block_order": [
-        "image_LaRCMB",
-        "image_pjBFnV"
+        "image_LaRCMB"
       ],
       "name": "Slideshow",
       "settings": {
@@ -143,8 +188,8 @@
         "heading_ANwPbL": {
           "type": "heading",
           "settings": {
-            "text": "Heading",
-            "heading_tag": "h1",
+            "text": "",
+            "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
           }
@@ -169,89 +214,6 @@
         "background": "",
         "background_gradient": "",
         "text_color": ""
-      }
-    },
-    "video_EWM9ML": {
-      "type": "video",
-      "blocks": {
-        "play_g74tJc": {
-          "type": "play",
-          "settings": {}
-        },
-        "heading_RqEk3c": {
-          "type": "heading",
-          "settings": {
-            "text": "Video",
-            "heading_tag": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "play_g74tJc",
-        "heading_RqEk3c"
-      ],
-      "name": "Video",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "autoplay": false,
-        "video_size": "auto",
-        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
-      }
-    },
-    "faq": {
-      "type": "faq",
-      "blocks": {
-        "166442457738b23caf-0": {
-          "type": "item",
-          "settings": {
-            "title": "Do you ship overseas?",
-            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
-          }
-        },
-        "166442457738b23caf-1": {
-          "type": "item",
-          "settings": {
-            "title": "How long will it take to get my orders?",
-            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
-          }
-        },
-        "166442457738b23caf-2": {
-          "type": "item",
-          "settings": {
-            "title": "Any question?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "166442457738b23caf-0",
-        "166442457738b23caf-1",
-        "166442457738b23caf-2"
-      ],
-      "settings": {
-        "full_width": false,
-        "subheading": "",
-        "title": "FAQ",
-        "content": "<p>Use this text to share information about your product or shipping policies.</p>",
-        "team_avatar_width": 160,
-        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
-        "answer_time": "Average answer time: 24h",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "start",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "accordion_background": "",
-        "accordion_text_color": ""
       }
     },
     "rich_text_knpKYa": {
@@ -602,6 +564,58 @@
         "heading_gradient": ""
       }
     },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "166442457738b23caf-0": {
+          "type": "item",
+          "settings": {
+            "title": "Do you ship overseas?",
+            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+          }
+        },
+        "166442457738b23caf-1": {
+          "type": "item",
+          "settings": {
+            "title": "How long will it take to get my orders?",
+            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+          }
+        },
+        "166442457738b23caf-2": {
+          "type": "item",
+          "settings": {
+            "title": "Any question?",
+            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "166442457738b23caf-0",
+        "166442457738b23caf-1",
+        "166442457738b23caf-2"
+      ],
+      "settings": {
+        "full_width": false,
+        "subheading": "",
+        "title": "FAQ",
+        "content": "<p>Use this text to share information about your product or shipping policies.</p>",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
+        "answer_time": "Average answer time: 24h",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
     "contact_kekHeE": {
       "type": "contact",
       "name": "Contact form",
@@ -626,10 +640,9 @@
   },
   "order": [
     "image_with_text_overlay_ApjxTB",
-    "logo_list_grNMFU",
+    "multi_column_jmaECe",
     "slideshow_LaXzBk",
     "rich_text_iQbHfe",
-    "video_EWM9ML",
     "rich_text_knpKYa",
     "logo_list_DXXYni",
     "testimonials_RRNPtR",
