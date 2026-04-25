@@ -42,8 +42,8 @@
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
-        "logo": "shopify://shop_images/Black_and_White_Minimalist_Photography_Logo.png",
-        "logo_max_width": 185,
+        "logo": "shopify://shop_images/Black_and_White_Minimalist_Photography_Logo-removebg-preview.png",
+        "logo_max_width": 300,
         "logo_mobile_max_width": 120,
         "menu": "main-menu",
         "sidebar_menu": "",

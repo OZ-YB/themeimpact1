@@ -135,6 +135,128 @@
         "text_color": ""
       }
     },
+    "1777145795d2c13309": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_fe1483c_3QerYi": {
+          "type": "ai_gen_block_fe1483c",
+          "name": "Avis clients",
+          "settings": {
+            "heading": "Ce que disent nos clients",
+            "subtitle": "Découvrez les témoignages de nos clients satisfaits",
+            "heading_size": 32,
+            "subtitle_size": 16,
+            "text_alignment": "center",
+            "desktop_width_percent": 100,
+            "columns_desktop": 3,
+            "columns_mobile": "1",
+            "grid_gap": 24,
+            "section_padding": 40,
+            "spacing_between_elements": 24,
+            "show_images": true,
+            "image_aspect_ratio": "4 / 3",
+            "image_border_radius": 12,
+            "show_rating": true,
+            "star_size": 20,
+            "star_color": "#FFB74A",
+            "star_empty_color": "#E0E0E0",
+            "background_color": "#FFFFFF",
+            "card_background": "#F9F9F9",
+            "card_border_radius": 16,
+            "card_padding": 24,
+            "card_inner_spacing": 16,
+            "border_radius": 0,
+            "heading_color": "#1A1A1A",
+            "text_color": "#666666",
+            "review_text_size": 15,
+            "avatar_size": 48,
+            "avatar_background": "#E0E0E0",
+            "author_name_size": 15,
+            "author_title_size": 13,
+            "review_1_image": "shopify://shop_images/Gemini_Generated_Image_gbnz96gbnz96gbnz.png",
+            "review_1_rating": 5,
+            "review_1_text": "Produit de qualité exceptionnelle ! Je recommande vivement.",
+            "review_1_name": "Marie Dupont",
+            "review_1_title": "Cliente vérifiée",
+            "review_2_image": "shopify://shop_images/Gemini_Generated_Image_ntr07qntr07qntr0.png",
+            "review_2_rating": 5,
+            "review_2_text": "Service client au top et livraison rapide. Très satisfait de mon achat.",
+            "review_2_name": "Pierre Martin",
+            "review_2_title": "Client fidèle",
+            "review_3_image": "shopify://shop_images/Gemini_Generated_Image_mvdg1fmvdg1fmvdg.png",
+            "review_3_rating": 5,
+            "review_3_text": "Excellent rapport qualité-prix. Je reviendrai sans hésiter !",
+            "review_3_name": "Sophie Bernard",
+            "review_3_title": "Acheteuse régulière"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_fe1483c_3QerYi"
+      ],
+      "settings": {}
+    },
+    "testimonials_RRNPtR": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_VWeh7K": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "John S.",
+            "title": "Testimonial 1",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
+        },
+        "testimonial_Eh38nL": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Mary U.",
+            "title": "Testimonial 2",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
+        },
+        "testimonial_xY4Uqi": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Joshua A.",
+            "title": "Testimonial 3",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_VWeh7K",
+        "testimonial_Eh38nL",
+        "testimonial_xY4Uqi"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "full_width": true,
+        "stack_testimonials": true,
+        "subheading": "",
+        "title": "Testimonials",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "testimonial_card_background": "",
+        "testimonial_card_text_color": ""
+      }
+    },
     "slideshow_LaXzBk": {
       "type": "slideshow",
       "blocks": {
@@ -317,66 +439,6 @@
         "heading_gradient": "",
         "logo_item_background": "",
         "logo_item_border": ""
-      }
-    },
-    "testimonials_RRNPtR": {
-      "type": "testimonials",
-      "blocks": {
-        "testimonial_VWeh7K": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 4,
-            "author": "John S.",
-            "title": "Testimonial 1",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
-          }
-        },
-        "testimonial_Eh38nL": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 5,
-            "author": "Mary U.",
-            "title": "Testimonial 2",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
-          }
-        },
-        "testimonial_xY4Uqi": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 4,
-            "author": "Joshua A.",
-            "title": "Testimonial 3",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_VWeh7K",
-        "testimonial_Eh38nL",
-        "testimonial_xY4Uqi"
-      ],
-      "name": "Testimonials",
-      "settings": {
-        "full_width": true,
-        "stack_testimonials": true,
-        "subheading": "",
-        "title": "Testimonials",
-        "content": "",
-        "link_url": "",
-        "link_text": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "testimonial_card_background": "",
-        "testimonial_card_text_color": ""
       }
     },
     "image_with_text_overlay_JHgGwi": {
@@ -641,11 +703,12 @@
   "order": [
     "image_with_text_overlay_ApjxTB",
     "multi_column_jmaECe",
+    "1777145795d2c13309",
+    "testimonials_RRNPtR",
     "slideshow_LaXzBk",
     "rich_text_iQbHfe",
     "rich_text_knpKYa",
     "logo_list_DXXYni",
-    "testimonials_RRNPtR",
     "image_with_text_overlay_JHgGwi",
     "featured_product_de3aMb",
     "images_with_text_scrolling_AmXiCT",
