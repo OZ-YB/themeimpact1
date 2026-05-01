@@ -425,10 +425,6 @@
     "featured_product_de3aMb": {
       "type": "featured-product",
       "blocks": {
-        "vendor_qNerAF": {
-          "type": "vendor",
-          "settings": {}
-        },
         "title_qyTJ6L": {
           "type": "title",
           "settings": {
@@ -442,7 +438,7 @@
         "price_3zxcBP": {
           "type": "price",
           "settings": {
-            "show_taxes_notice": false
+            "show_taxes_notice": true
           }
         },
         "rating_6MhcpK": {
@@ -457,6 +453,7 @@
         },
         "description_XXxNaj": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 20,
@@ -495,7 +492,6 @@
         }
       },
       "block_order": [
-        "vendor_qNerAF",
         "title_qyTJ6L",
         "badges_cGhNkr",
         "price_3zxcBP",
@@ -510,7 +506,7 @@
       "name": "Featured product",
       "settings": {
         "full_width": true,
-        "product": "",
+        "product": "camera-sans-ecran-1",
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_left",
         "mobile_media_size": "expanded",
