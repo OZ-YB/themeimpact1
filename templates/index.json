@@ -522,6 +522,10 @@
         "input_text_color": "#f2f2f2"
       }
     },
+    "17776736847fe19b08": {
+      "type": "_blocks",
+      "settings": {}
+    },
     "images_with_text_scrolling_AmXiCT": {
       "type": "images-with-text-scrolling",
       "blocks": {
@@ -646,6 +650,7 @@
     "logo_list_DXXYni",
     "image_with_text_overlay_JHgGwi",
     "featured_product_de3aMb",
+    "17776736847fe19b08",
     "images_with_text_scrolling_AmXiCT",
     "faq",
     "contact_kekHeE"
