@@ -14,15 +14,39 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "message_KkUmDG": {
+          "type": "message",
+          "settings": {
+            "text": "Livraison gratuite",
+            "url": ""
+          }
+        },
+        "message_HezxPY": {
+          "type": "message",
+          "settings": {
+            "text": "Satisfait ou remboursé",
+            "url": ""
+          }
+        },
+        "message_fJTaGJ": {
+          "type": "message",
+          "settings": {
+            "text": "Paiement 100% sécurisé",
+            "url": ""
+          }
+        },
         "message": {
           "type": "message",
           "settings": {
-            "text": "Announce something here",
+            "text": "Offre limitée - 30%",
             "url": ""
           }
         }
       },
       "block_order": [
+        "message_KkUmDG",
+        "message_HezxPY",
+        "message_fJTaGJ",
         "message"
       ],
       "settings": {
