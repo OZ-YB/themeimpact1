@@ -318,69 +318,6 @@
         "text_color": ""
       }
     },
-    "logo_list_DXXYni": {
-      "type": "logo-list",
-      "blocks": {
-        "logo_zKxznq": {
-          "type": "logo",
-          "settings": {
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_EW9YXM": {
-          "type": "logo",
-          "settings": {
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_4caXmg": {
-          "type": "logo",
-          "settings": {
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_y9EeDm": {
-          "type": "logo",
-          "settings": {
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_agFQqQ": {
-          "type": "logo",
-          "settings": {
-            "logo_width": 120,
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_zKxznq",
-        "logo_EW9YXM",
-        "logo_4caXmg",
-        "logo_y9EeDm",
-        "logo_agFQqQ"
-      ],
-      "name": "Logo list",
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "title": "Logo list",
-        "content": "",
-        "text_alignment": "start",
-        "items_per_row": 5,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "logo_item_background": "",
-        "logo_item_border": ""
-      }
-    },
     "image_with_text_overlay_JHgGwi": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -638,6 +575,48 @@
         "button_background": "",
         "button_text_color": ""
       }
+    },
+    "rich_text_yxGrqY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GfBN7d": {
+          "type": "heading",
+          "settings": {
+            "text": "Pourquoi choisir Pics moment ?",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_GfBN7d"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "image_with_text_overlay_KB3dim": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/7D63CBF0-7B53-4831-9780-C23938D746C8.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
     }
   },
   "order": [
@@ -647,12 +626,13 @@
     "slideshow_LaXzBk",
     "rich_text_iQbHfe",
     "rich_text_knpKYa",
-    "logo_list_DXXYni",
     "image_with_text_overlay_JHgGwi",
     "featured_product_de3aMb",
     "17776736847fe19b08",
     "images_with_text_scrolling_AmXiCT",
     "faq",
-    "contact_kekHeE"
+    "contact_kekHeE",
+    "rich_text_yxGrqY",
+    "image_with_text_overlay_KB3dim"
   ]
 }
