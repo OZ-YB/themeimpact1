@@ -270,6 +270,12 @@
         "pickup_availability_zHzn7K": {
           "type": "pickup_availability",
           "settings": {}
+        },
+        "rapi_rapi_bundle_JeDEXP": {
+          "type": "shopify://apps/rapi/blocks/rapi-bundle/99617c17-a32b-4e70-a883-7a155610d032",
+          "settings": {
+            "product": "camera-sans-ecran"
+          }
         }
       },
       "block_order": [
@@ -283,7 +289,8 @@
         "quantity_selector_ca6MJW",
         "liquid_7nDKxw",
         "buy_buttons_zPzqD7",
-        "pickup_availability_zHzn7K"
+        "pickup_availability_zHzn7K",
+        "rapi_rapi_bundle_JeDEXP"
       ],
       "name": "Featured product",
       "settings": {
