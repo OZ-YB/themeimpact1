@@ -197,168 +197,6 @@
       ],
       "settings": {}
     },
-    "slideshow_LaXzBk": {
-      "type": "slideshow",
-      "blocks": {
-        "image_LaRCMB": {
-          "type": "image",
-          "settings": {
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_LaRCMB"
-      ],
-      "name": "Slideshow",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": true,
-        "show_initial_transition": false,
-        "image_size": "auto",
-        "controls_type": "dots",
-        "transition_type": "fade_with_text",
-        "autoplay": false,
-        "cycle_speed": 6,
-        "background": "#f2f2f2",
-        "background_gradient": ""
-      }
-    },
-    "rich_text_iQbHfe": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_JbU3qp": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
-        "heading_ANwPbL": {
-          "type": "heading",
-          "settings": {
-            "text": "",
-            "heading_tag": "h2",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_dmnQ4a": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_JbU3qp",
-        "heading_ANwPbL",
-        "richtext_dmnQ4a"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "rich_text_knpKYa": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_hewMfN": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
-        "heading_mYGFKa": {
-          "type": "heading",
-          "settings": {
-            "text": "Heading",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_QT6WEj": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_hewMfN",
-        "heading_mYGFKa",
-        "richtext_QT6WEj"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "image_with_text_overlay_JHgGwi": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "subheading_zeKHRf": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
-        "heading_qAiVKL": {
-          "type": "heading",
-          "settings": {
-            "text": "Image with text overlay",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_cXDKHr": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_zeKHRf",
-        "heading_qAiVKL",
-        "richtext_cXDKHr"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
-      }
-    },
     "featured_product_de3aMb": {
       "type": "featured-product",
       "blocks": {
@@ -412,13 +250,19 @@
           "type": "quantity_selector",
           "settings": {}
         },
+        "liquid_7nDKxw": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"mini-trust-banner\">\n  <div class=\"mini-trust-container\">\n\n    <div class=\"mini-trust-item\">\n      <div class=\"mini-trust-icon\">\n        <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n          <rect x=\"2\" y=\"3\" width=\"20\" height=\"18\" rx=\"2\" ry=\"2\"></rect>\n          <circle cx=\"12\" cy=\"12\" r=\"3\"></circle>\n          <path d=\"M12 9v6m-3-3h6\"></path>\n          <path d=\"M7.17 7.17a8 8 0 0111.66 0M4 12h3m10 0h3\"></path>\n        </svg>\n      </div>\n      <div class=\"mini-trust-text\">\n        Paiement<br>sécurisé\n      </div>\n    </div>\n\n    <div class=\"mini-trust-item\">\n      <div class=\"mini-trust-icon\">\n        <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n          <path d=\"M12 2v2m0 16v2m-8-8h2m12 0h2m-6-10l2 2m4-4l-2 2M6.34 17.66l2 2M15.66 8.34l2 2\"></path>\n          <path d=\"M11 11a1 1 0 102 0m0 0a3 3 0 11-6 0v-2l6 0a3 3 0 013 3\"></path>\n          <rect x=\"9\" y=\"16\" width=\"6\" height=\"4\" rx=\"1\"></rect>\n          <path d=\"M10 11.5l1.5 1.5 2.5-2.5\"></path>\n        </svg>\n      </div>\n      <div class=\"mini-trust-text\">\n        Livraison<br>gratuite\n      </div>\n    </div>\n\n    <div class=\"mini-trust-item\">\n      <div class=\"mini-trust-icon\">\n        <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n          <path d=\"M21.5 2v6h-6\"></path>\n          <path d=\"M21.5 8a9 9 0 10-6.17 11.23\"></path>\n          <text x=\"12\" y=\"15.5\" font-family=\"Arial\" font-size=\"10\" font-weight=\"bold\" fill=\"currentColor\" text-anchor=\"middle\">€</text>\n        </svg>\n      </div>\n      <div class=\"mini-trust-text\">\n        Satisfait ou<br>Remboursé\n      </div>\n    </div>\n\n  </div>\n</div>\n\n<style>\n  /* Conteneur principal discret */\n  .mini-trust-banner {\n    width: 100%;\n    background-color: #000000; /* Fond noir uni pour la discrétion */\n    color: #FFFFFF;\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif;\n    padding: 10px 0; /* Espacement vertical réduit au minimum */\n    box-sizing: border-box;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n  }\n\n  /* Conteneur interne compact */\n  .mini-trust-container {\n    width: 100%;\n    max-width: 900px; /* Plus étroit pour centraliser */\n    margin: 0 auto;\n    display: flex;\n    justify-content: space-around; /* Mieux réparti pour la petite taille */\n    align-items: center;\n    padding: 10px 20px; /* Moins de padding */\n    box-sizing: border-box;\n  }\n\n  /* Style des articles individuels (très compact) */\n  .mini-trust-item {\n    display: flex;\n    align-items: center;\n    justify-content: flex-start;\n    text-align: left;\n    margin: 0 10px; /* Espacement entre les éléments */\n  }\n\n  /* Conteneur d'icône miniature */\n  .mini-trust-icon {\n    width: 28px; /* Petite icône */\n    height: 28px;\n    color: #d4af37; /* Couleur dorée */\n    margin-right: 12px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-shrink: 0; /* Empêche l'icône de rétrécir */\n  }\n\n  /* SVG Icône */\n  .mini-trust-icon svg {\n    width: 100%;\n    height: 100%;\n    display: block;\n  }\n\n  /* Style de texte miniature */\n  .mini-trust-text {\n    font-size: 1.0rem; /* Taille de police normale pour la lisibilité */\n    line-height: 1.2;\n    font-weight: 500;\n    text-transform: capitalize;\n    white-space: nowrap; /* Empêche le texte de passer à la ligne s'il n'y a pas de <br> */\n  }\n\n  /* --- ADAPTATION MOBILE (Responsive) --- */\n  @media screen and (max-width: 600px) {\n    .mini-trust-container {\n      flex-direction: column;\n      gap: 10px;\n    }\n\n    .mini-trust-item {\n      width: auto;\n      text-align: left;\n      justify-content: flex-start;\n    }\n  }\n</style>"
+          }
+        },
         "buy_buttons_zPzqD7": {
           "type": "buy_buttons",
           "settings": {
-            "show_payment_button": true,
+            "show_payment_button": false,
             "show_gift_card_recipient": true,
-            "atc_button_background": "",
-            "atc_button_text_color": "",
+            "atc_button_background": "#f0c417",
+            "atc_button_text_color": "#000000",
             "payment_button_background": "",
             "payment_button_text_color": ""
           }
@@ -437,6 +281,7 @@
         "description_XXxNaj",
         "variant_picker_QrwgaU",
         "quantity_selector_ca6MJW",
+        "liquid_7nDKxw",
         "buy_buttons_zPzqD7",
         "pickup_availability_zHzn7K"
       ],
@@ -462,119 +307,6 @@
     "17776736847fe19b08": {
       "type": "_blocks",
       "settings": {}
-    },
-    "images_with_text_scrolling_AmXiCT": {
-      "type": "images-with-text-scrolling",
-      "blocks": {
-        "item_rD688R": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 48,
-            "title": "Heading 1",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-          }
-        },
-        "item_U3BHWX": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 48,
-            "title": "Heading 2",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_rD688R",
-        "item_U3BHWX"
-      ],
-      "name": "Images and text scrolling",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "show_counter": true,
-        "desktop_image_effect": "reveal",
-        "image_position": "end",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
-      }
-    },
-    "faq": {
-      "type": "faq",
-      "blocks": {
-        "166442457738b23caf-0": {
-          "type": "item",
-          "settings": {
-            "title": "Do you ship overseas?",
-            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
-          }
-        },
-        "166442457738b23caf-1": {
-          "type": "item",
-          "settings": {
-            "title": "How long will it take to get my orders?",
-            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
-          }
-        },
-        "166442457738b23caf-2": {
-          "type": "item",
-          "settings": {
-            "title": "Any question?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "166442457738b23caf-0",
-        "166442457738b23caf-1",
-        "166442457738b23caf-2"
-      ],
-      "settings": {
-        "full_width": false,
-        "subheading": "",
-        "title": "FAQ",
-        "content": "<p>Use this text to share information about your product or shipping policies.</p>",
-        "team_avatar_width": 160,
-        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
-        "answer_time": "Average answer time: 24h",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "start",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "accordion_background": "",
-        "accordion_text_color": ""
-      }
-    },
-    "contact_kekHeE": {
-      "type": "contact",
-      "name": "Contact form",
-      "settings": {
-        "full_width": true,
-        "subheading": "Contact Us",
-        "title": "Do you have any question?",
-        "content": "",
-        "text_position": "start",
-        "contact_form_size": "large",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "contact_background": "",
-        "contact_text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
     },
     "rich_text_yxGrqY": {
       "type": "rich-text",
@@ -623,15 +355,8 @@
     "image_with_text_overlay_ApjxTB",
     "multi_column_jmaECe",
     "1777145795d2c13309",
-    "slideshow_LaXzBk",
-    "rich_text_iQbHfe",
-    "rich_text_knpKYa",
-    "image_with_text_overlay_JHgGwi",
     "featured_product_de3aMb",
     "17776736847fe19b08",
-    "images_with_text_scrolling_AmXiCT",
-    "faq",
-    "contact_kekHeE",
     "rich_text_yxGrqY",
     "image_with_text_overlay_KB3dim"
   ]
