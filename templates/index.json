@@ -250,6 +250,12 @@
           "type": "quantity_selector",
           "settings": {}
         },
+        "rapi_rapi_bundle_JeDEXP": {
+          "type": "shopify://apps/rapi/blocks/rapi-bundle/99617c17-a32b-4e70-a883-7a155610d032",
+          "settings": {
+            "product": "camera-sans-ecran"
+          }
+        },
         "liquid_7nDKxw": {
           "type": "liquid",
           "settings": {
@@ -270,12 +276,6 @@
         "pickup_availability_zHzn7K": {
           "type": "pickup_availability",
           "settings": {}
-        },
-        "rapi_rapi_bundle_JeDEXP": {
-          "type": "shopify://apps/rapi/blocks/rapi-bundle/99617c17-a32b-4e70-a883-7a155610d032",
-          "settings": {
-            "product": "camera-sans-ecran"
-          }
         }
       },
       "block_order": [
@@ -287,10 +287,10 @@
         "description_XXxNaj",
         "variant_picker_QrwgaU",
         "quantity_selector_ca6MJW",
+        "rapi_rapi_bundle_JeDEXP",
         "liquid_7nDKxw",
         "buy_buttons_zPzqD7",
-        "pickup_availability_zHzn7K",
-        "rapi_rapi_bundle_JeDEXP"
+        "pickup_availability_zHzn7K"
       ],
       "name": "Featured product",
       "settings": {
@@ -356,6 +356,107 @@
         "overlay_color": "#000000",
         "overlay_opacity": 0
       }
+    },
+    "faq_DaHh6P": {
+      "type": "faq",
+      "blocks": {
+        "item_dTaY6n": {
+          "type": "item",
+          "settings": {
+            "title": "Quels sont les délais de livraison ?",
+            "content": "<p>Nos commandes sont traitées sous 24h à 48h. Une fois votre colis expédié, la livraison prend généralement <strong>5 à 7 jours ouvrés</strong>. En période de forte demande, ce délai peut être légèrement rallongé, mais nous faisons le maximum pour vous livrer au plus vite.</p>"
+          }
+        },
+        "item_PUaxdd": {
+          "type": "item",
+          "settings": {
+            "title": "Comment puis-je suivre mon colis ?",
+            "content": "<p>Dès que votre commande quitte notre entrepôt, vous recevez automatiquement un email avec un <strong>numéro de suivi</strong>. Vous pouvez l'utiliser sur notre page \"Suivre ma commande\" pour savoir exactement où se trouve votre colis en temps réel.</p>"
+          }
+        },
+        "item_kUMaLC": {
+          "type": "item",
+          "settings": {
+            "title": "Livrez-vous partout ?",
+            "content": "<p>Nous livrons actuellement en France, Belgique, Suisse et Luxembourg. La livraison standard est <strong>offerte</strong> sans minimum d'achat pour célébrer le lancement de notre nouvelle collection.</p>"
+          }
+        },
+        "item_hTCGwG": {
+          "type": "item",
+          "settings": {
+            "title": "Puis-je changer d'avis ?",
+            "content": "<p>Bien sûr ! Votre satisfaction est notre priorité. Vous disposez de <strong>30 jours</strong> après la réception de votre colis pour nous renvoyer le produit s'il ne vous convient pas. Contactez notre support pour entamer la procédure de retour simple et rapide.</p>"
+          }
+        },
+        "item_FNkYjw": {
+          "type": "item",
+          "settings": {
+            "title": "Que faire si le produit arrive cassé ?",
+            "content": "<p>Pas d'inquiétude. Si votre article arrive endommagé, envoyez-nous une photo de l'article et du colis à notre adresse email de support. Après vérification, nous vous renverrons un <strong>article neuf immédiatement</strong>, entièrement à nos frais.</p>"
+          }
+        },
+        "item_bjEB4n": {
+          "type": "item",
+          "settings": {
+            "title": "Quels sont les modes de paiement acceptés ?",
+            "content": "<p>Nous acceptons toutes les cartes bancaires (Visa, Mastercard, American Express) ainsi que les paiements ultra-sécurisés via <strong>PayPal, Apple Pay et Shop Pay</strong>.</p>"
+          }
+        },
+        "item_NEgjPU": {
+          "type": "item",
+          "settings": {
+            "title": "Mon paiement est-il sécurisé ?",
+            "content": "<p>Absolument. Notre boutique utilise le protocole de sécurité <strong>SSL (Secure Sockets Layer)</strong> qui crypte vos données bancaires. Nous n'avons jamais accès à vos informations de carte ; elles sont traitées de manière totalement anonyme par nos prestataires de paiement.</p>"
+          }
+        },
+        "item_NMHNMD": {
+          "type": "item",
+          "settings": {
+            "title": "Est-ce que le produit est facile à utiliser ?",
+            "content": "<p>Oui, nous avons sélectionné ce produit pour sa simplicité. Un <strong>manuel d'utilisation simplifié</strong> est inclus dans chaque colis pour vous permettre de profiter de votre achat dès les premières minutes.</p>"
+          }
+        },
+        "item_kFa69r": {
+          "type": "item",
+          "settings": {
+            "title": "Où puis-je vous contacter si j'ai une question ?",
+            "content": "<p>Notre équipe SAV est disponible 7j/7. Vous pouvez nous écrire via le formulaire de contact du site ou directement par email. Nous répondons généralement en moins de 24h.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_dTaY6n",
+        "item_PUaxdd",
+        "item_kUMaLC",
+        "item_hTCGwG",
+        "item_FNkYjw",
+        "item_bjEB4n",
+        "item_NEgjPU",
+        "item_NMHNMD",
+        "item_kFa69r"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "FAQ",
+        "content": "<p>Use this text to share information about your product or shipping policies.</p>",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
+        "answer_time": "Average answer time: 24h",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
     }
   },
   "order": [
@@ -365,6 +466,7 @@
     "featured_product_de3aMb",
     "17776736847fe19b08",
     "rich_text_yxGrqY",
-    "image_with_text_overlay_KB3dim"
+    "image_with_text_overlay_KB3dim",
+    "faq_DaHh6P"
   ]
 }
