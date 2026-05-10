@@ -87,6 +87,7 @@
         "discount",
         "payment"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
@@ -116,7 +117,7 @@
           "settings": {
             "menu": "footer",
             "show_menu_title": true,
-            "menu_title": ""
+            "menu_title": "Information"
           }
         },
         "text": {
