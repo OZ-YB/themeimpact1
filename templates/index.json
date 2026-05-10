@@ -457,6 +457,27 @@
         "accordion_background": "",
         "accordion_text_color": ""
       }
+    },
+    "contact_NGm3yf": {
+      "type": "contact",
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "Une équipe à votre écoute 7 jours sur 7. Réponse moyenne en 35 minutes.",
+        "title": "Une question ? Nous sommes là pour vous.",
+        "content": "<p>Écrivez-nous via le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
     }
   },
   "order": [
@@ -467,6 +488,7 @@
     "17776736847fe19b08",
     "rich_text_yxGrqY",
     "image_with_text_overlay_KB3dim",
-    "faq_DaHh6P"
+    "faq_DaHh6P",
+    "contact_NGm3yf"
   ]
 }
