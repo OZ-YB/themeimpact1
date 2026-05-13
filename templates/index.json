@@ -46,7 +46,7 @@
             "column_size": "3",
             "title": "",
             "heading_tag": "h4",
-            "content": "<p>NO SCREEN</p>",
+            "content": "<p>SANS ÉCRAN</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -58,7 +58,7 @@
             "column_size": "3",
             "title": "",
             "heading_tag": "h4",
-            "content": "<p>NO CAMERA ROLL</p><p></p>",
+            "content": "<p>PAS DE PELLICULE</p><p></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -70,7 +70,7 @@
             "column_size": "3",
             "title": "",
             "heading_tag": "h4",
-            "content": "<p>VINTAGE STYLE FILM</p><p></p>",
+            "content": "<p>RENDU PELLICULE VINTAGE</p><p></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -82,7 +82,7 @@
             "column_size": "3",
             "title": "",
             "heading_tag": "h4",
-            "content": "<p>PRE LOADED STORAGE </p><p></p>",
+            "content": "<p>MÉMOIRE PRÉ-CHARGÉE</p><p></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -94,7 +94,7 @@
             "column_size": "3",
             "title": "",
             "heading_tag": "h4",
-            "content": "<p>RECHARGEABLE BATTERY</p>",
+            "content": "<p>BATTERIE RECHARGEABLE</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -106,7 +106,7 @@
             "column_size": "3",
             "title": "",
             "heading_tag": "h4",
-            "content": "<p>ECO FRIENDLY</p><p></p>",
+            "content": "<p>ÉCOLOGIQUE</p><p></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
