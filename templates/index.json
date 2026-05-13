@@ -28,10 +28,10 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/WhatsApp_Image_2026-04-24_at_11.18.47_1.jpg",
+        "image": "shopify://shop_images/Gemini_Generated_Image_dcq1djdcq1djdcq1.png",
         "mobile_image": "shopify://shop_images/WhatsApp_Image_2026-04-24_at_11.18.47_1.jpg",
         "mobile_text_position": "place-self-start text-start",
-        "desktop_text_position": "sm:place-self-center-start sm:text-start",
+        "desktop_text_position": "sm:place-self-start sm:text-start",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 0
