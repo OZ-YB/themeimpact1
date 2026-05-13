@@ -124,9 +124,9 @@
       "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "medium",
-        "text_alignment": "start",
+        "text_alignment": "center",
         "subheading": "",
         "title": "",
         "content": "",
