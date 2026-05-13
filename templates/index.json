@@ -15,7 +15,7 @@
         "richtext_VJVD4H": {
           "type": "richtext",
           "settings": {
-            "content": "<h1><strong>L'élégance du passé, réinventée pour aujourd'hui.</strong></h1>"
+            "content": "<h4><strong>L'élégance du passé, réinventée pour aujourd'hui.</strong></h4>"
           }
         }
       },
@@ -28,8 +28,8 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/Gemini_Generated_Image_dcq1djdcq1djdcq1.png",
-        "mobile_image": "shopify://shop_images/WhatsApp_Image_2026-04-24_at_11.18.47_1.jpg",
+        "image": "shopify://shop_images/Gemini_Generated_Image_60p0sv60p0sv60p0_1.png",
+        "mobile_image": "shopify://shop_images/Gemini_Generated_Image_60p0sv60p0sv60p0_1.png",
         "mobile_text_position": "place-self-start text-start",
         "desktop_text_position": "sm:place-self-start sm:text-start",
         "text_color": "#ffffff",
