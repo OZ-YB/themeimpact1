@@ -268,60 +268,12 @@
     "1777145795d2c13309": {
       "type": "_blocks",
       "blocks": {
-        "ai_gen_block_2ce712f_Nbm8T7": {
-          "type": "ai_gen_block_2ce712f",
-          "settings": {
-            "title": "Ce que disent nos clients",
-            "subtitle": "Des milliers de clients satisfaits",
-            "title_size": 32,
-            "subtitle_size": 16,
-            "autoplay": true,
-            "autoplay_speed": 5,
-            "desktop_width_percent": 100,
-            "background_color": "#f9f9f9",
-            "text_color": "#1a1a1a",
-            "card_background": "#ffffff",
-            "star_color": "#FFB800",
-            "nav_button_color": "#1a1a1a",
-            "nav_button_icon_color": "#ffffff",
-            "dot_color": "#1a1a1a",
-            "border_radius": 16,
-            "card_border_radius": 12,
-            "review_text_size": 16,
-            "author_size": 16,
-            "location_size": 14,
-            "review_1_enabled": true,
-            "review_1_rating": 5,
-            "review_1_text": "Produit de qualité exceptionnelle ! Je recommande vivement.",
-            "review_1_author": "Marie Dupont",
-            "review_1_location": "Paris, France",
-            "review_2_enabled": true,
-            "review_2_rating": 5,
-            "review_2_text": "Livraison rapide et service client au top. Très satisfait de mon achat.",
-            "review_2_author": "Jean Martin",
-            "review_2_location": "Lyon, France",
-            "review_3_enabled": true,
-            "review_3_rating": 4,
-            "review_3_text": "Excellent rapport qualité-prix. Je reviendrai commander sans hésiter.",
-            "review_3_author": "Sophie Bernard",
-            "review_3_location": "Marseille, France",
-            "review_4_enabled": true,
-            "review_4_rating": 5,
-            "review_4_text": "Produit conforme à la description. Très bonne expérience d'achat.",
-            "review_4_author": "Pierre Dubois",
-            "review_4_location": "Toulouse, France",
-            "review_5_enabled": true,
-            "review_5_rating": 5,
-            "review_5_text": "Je suis ravie de mon achat. La qualité est au rendez-vous !",
-            "review_5_author": "Claire Petit",
-            "review_5_location": "Nice, France"
-          },
-          "blocks": {}
-        },
         "ai_gen_block_fe1483c_3QerYi": {
           "type": "ai_gen_block_fe1483c",
           "name": "Avis clients",
           "settings": {
+            "autoplay": false,
+            "autoplay_speed": 5,
             "heading": "Ce que disent nos clients",
             "columns_desktop": 3,
             "columns_mobile": "2",
@@ -354,7 +306,6 @@
         }
       },
       "block_order": [
-        "ai_gen_block_2ce712f_Nbm8T7",
         "ai_gen_block_fe1483c_3QerYi"
       ],
       "settings": {}
