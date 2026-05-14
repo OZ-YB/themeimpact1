@@ -143,24 +143,10 @@
         "show_country_name": true,
         "show_locale_selector": true
       }
-    },
-    "custom_liquid_DhWyD7": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "<div class=\"custom-payment-icons\" style=\"text-align: center; padding: 15px 0;\">\n  <p style=\"margin-bottom: 12px; font-size: 13px; color: #666; font-weight: 500;\">Paiement 100% Sécurisé via</p>\n  <div class=\"payment-list\" style=\"display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;\">\n    {% assign enabled_payment_types = 'visa,master,paypal,apple_pay,google_pay,maestro' | split: ',' %}\n    {% for type in enabled_payment_types %}\n      {{ type | payment_type_svg_tag: class: 'icon-payment' }}\n    {% endfor %}\n  </div>\n</div>\n\n<style>\n  .icon-payment {\n    width: 40px;\n    height: auto;\n    border-radius: 3px;\n  }\n</style>",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
     }
   },
   "order": [
     "text-with-icons",
-    "footer",
-    "custom_liquid_DhWyD7"
+    "footer"
   ]
 }
