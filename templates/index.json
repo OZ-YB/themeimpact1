@@ -135,6 +135,48 @@
         "text_color": ""
       }
     },
+    "rich_text_yxGrqY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GfBN7d": {
+          "type": "heading",
+          "settings": {
+            "text": "Pourquoi choisir Pics moment ?",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_GfBN7d"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "image_with_text_overlay_KB3dim": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/7D63CBF0-7B53-4831-9780-C23938D746C8.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
     "featured_product_de3aMb": {
       "type": "featured-product",
       "blocks": {
@@ -249,22 +291,6 @@
         "input_text_color": "#f2f2f2"
       }
     },
-    "image_with_text_overlay_KB3dim": {
-      "type": "image-with-text-overlay",
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/7D63CBF0-7B53-4831-9780-C23938D746C8.jpg",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
-    },
     "1777145795d2c13309": {
       "type": "_blocks",
       "blocks": {
@@ -328,32 +354,6 @@
     "17776736847fe19b08": {
       "type": "_blocks",
       "settings": {}
-    },
-    "rich_text_yxGrqY": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_GfBN7d": {
-          "type": "heading",
-          "settings": {
-            "text": "Pourquoi choisir Pics moment ?",
-            "heading_tag": "h3",
-            "text_color": "",
-            "gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_GfBN7d"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
     },
     "1778533398b41a95db": {
       "type": "apps",
