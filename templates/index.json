@@ -268,6 +268,58 @@
     "1777145795d2c13309": {
       "type": "_blocks",
       "blocks": {
+        "ai_gen_block_53418dc_jUdYxx": {
+          "type": "ai_gen_block_53418dc",
+          "settings": {
+            "title": "Ce que disent nos clients",
+            "subtitle": "Des milliers de clients satisfaits",
+            "title_size": 36,
+            "subtitle_size": 16,
+            "review_1_text": "Produit de qualité exceptionnelle ! Je recommande vivement. Le service client est également au top.",
+            "review_1_name": "Sophie Martin",
+            "review_1_date": "12 mai 2026",
+            "review_1_rating": 5,
+            "review_2_text": "Livraison rapide et produit conforme à la description. Très satisfait de mon achat !",
+            "review_2_name": "Thomas Dubois",
+            "review_2_date": "10 mai 2026",
+            "review_2_rating": 5,
+            "review_3_text": "Excellent rapport qualité-prix. Je suis ravie de ma commande et je reviendrai sans hésiter.",
+            "review_3_name": "Marie Lefebvre",
+            "review_3_date": "8 mai 2026",
+            "review_3_rating": 5,
+            "review_4_text": "Produit magnifique et emballage soigné. Une belle découverte que je recommande à tous !",
+            "review_4_name": "Lucas Bernard",
+            "review_4_date": "5 mai 2026",
+            "review_4_rating": 5,
+            "review_5_text": "Service impeccable et produit de grande qualité. Je suis très content de mon achat.",
+            "review_5_name": "Emma Petit",
+            "review_5_date": "3 mai 2026",
+            "review_5_rating": 4,
+            "review_6_text": "Très bonne expérience d'achat. Le produit correspond parfaitement à mes attentes !",
+            "review_6_name": "Antoine Moreau",
+            "review_6_date": "1 mai 2026",
+            "review_6_rating": 5,
+            "scroll_speed": 60,
+            "card_width": 310,
+            "desktop_width_percent": 100,
+            "background_color": "#ffffff",
+            "card_background": "#f8f8f8",
+            "card_border_radius": 16,
+            "border_radius": 0,
+            "shadow_opacity": 0.1,
+            "shadow_vertical": 4,
+            "shadow_blur": 12,
+            "title_color": "#1a1a1a",
+            "text_color": "#666666",
+            "star_color": "#FFB74A",
+            "star_empty_color": "#E0E0E0",
+            "star_size": 18,
+            "review_text_size": 14,
+            "avatar_background": "#FFB74A",
+            "avatar_text_color": "#ffffff"
+          },
+          "blocks": {}
+        },
         "ai_gen_block_fe1483c_3QerYi": {
           "type": "ai_gen_block_fe1483c",
           "name": "Avis clients",
@@ -306,6 +358,7 @@
         }
       },
       "block_order": [
+        "ai_gen_block_53418dc_jUdYxx",
         "ai_gen_block_fe1483c_3QerYi"
       ],
       "settings": {}
