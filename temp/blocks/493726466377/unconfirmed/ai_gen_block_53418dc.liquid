@@ -1,6 +1,646 @@
+{% doc %}
+  @prompt
+    a partir du bloc "avis clients" du dessous, génére des avis clients qui défilent sous forme de carroussel
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-reviews-carousel-{{ ai_gen_id }} {
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 40px 0;
+    background-color: {{ block.settings.background_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+  }
+
+  .ai-reviews-carousel__header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+
+  .ai-reviews-carousel__title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 10px;
+  }
+
+  .ai-reviews-carousel__subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.text_color }};
+    margin: 0;
+  }
+
+  .ai-reviews-carousel__track-{{ ai_gen_id }} {
+    display: flex;
+    gap: 24px;
+    animation: ai-reviews-scroll-{{ ai_gen_id }} {{ block.settings.scroll_speed }}s linear infinite;
+    will-change: transform;
+  }
+
+  .ai-reviews-carousel__track-{{ ai_gen_id }}:hover {
+    animation-play-state: paused;
+  }
+
+  .ai-reviews-carousel__card-{{ ai_gen_id }} {
+    flex: 0 0 {{ block.settings.card_width }}px;
+    background-color: {{ block.settings.card_background }};
+    border-radius: {{ block.settings.card_border_radius }}px;
+    padding: 24px;
+    box-shadow: 0 {{ block.settings.shadow_vertical }}px {{ block.settings.shadow_blur }}px rgba(0, 0, 0, {{ block.settings.shadow_opacity }});
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .ai-reviews-carousel__rating-{{ ai_gen_id }} {
+    display: flex;
+    gap: 4px;
+  }
+
+  .ai-reviews-carousel__star-{{ ai_gen_id }} {
+    width: {{ block.settings.star_size }}px;
+    height: {{ block.settings.star_size }}px;
+    color: {{ block.settings.star_color }};
+  }
+
+  .ai-reviews-carousel__star-{{ ai_gen_id }}--empty {
+    color: {{ block.settings.star_empty_color }};
+  }
+
+  .ai-reviews-carousel__text-{{ ai_gen_id }} {
+    font-size: {{ block.settings.review_text_size }}px;
+    color: {{ block.settings.text_color }};
+    line-height: 1.6;
+    flex-grow: 1;
+  }
+
+  .ai-reviews-carousel__author-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .ai-reviews-carousel__avatar-{{ ai_gen_id }} {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: {{ block.settings.avatar_background }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: {{ block.settings.avatar_text_color }};
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  .ai-reviews-carousel__author-info-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .ai-reviews-carousel__author-name-{{ ai_gen_id }} {
+    font-weight: 600;
+    font-size: 14px;
+    color: {{ block.settings.title_color }};
+  }
+
+  .ai-reviews-carousel__author-date-{{ ai_gen_id }} {
+    font-size: 12px;
+    color: {{ block.settings.text_color }};
+    opacity: 0.7;
+  }
+
+  @keyframes ai-reviews-scroll-{{ ai_gen_id }} {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-{{ block.settings.card_width }}px - 24px) * 6);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-reviews-carousel__card-{{ ai_gen_id }} {
+      flex: 0 0 280px;
+    }
+
+    @keyframes ai-reviews-scroll-{{ ai_gen_id }} {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-280px - 24px) * 6);
+      }
+    }
+  }
+{% endstyle %}
+
+<div class="ai-reviews-carousel-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  {% if block.settings.title != blank or block.settings.subtitle != blank %}
+    <div class="ai-reviews-carousel__header-{{ ai_gen_id }}">
+      {% if block.settings.title != blank %}
+        <h2 class="ai-reviews-carousel__title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+      {% endif %}
+      {% if block.settings.subtitle != blank %}
+        <p class="ai-reviews-carousel__subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle }}</p>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div class="ai-reviews-carousel__track-{{ ai_gen_id }}">
+    {% for i in (1..6) %}
+      {% liquid
+        assign review_text_key = 'review_' | append: i | append: '_text'
+        assign review_name_key = 'review_' | append: i | append: '_name'
+        assign review_date_key = 'review_' | append: i | append: '_date'
+        assign review_rating_key = 'review_' | append: i | append: '_rating'
+
+        assign review_text = block.settings[review_text_key]
+        assign review_name = block.settings[review_name_key]
+        assign review_date = block.settings[review_date_key]
+        assign review_rating = block.settings[review_rating_key]
+      %}
+
+      <div class="ai-reviews-carousel__card-{{ ai_gen_id }}">
+        <div class="ai-reviews-carousel__rating-{{ ai_gen_id }}">
+          {% for star in (1..5) %}
+            {% if star <= review_rating %}
+              <svg class="ai-reviews-carousel__star-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            {% else %}
+              <svg class="ai-reviews-carousel__star-{{ ai_gen_id }} ai-reviews-carousel__star-{{ ai_gen_id }}--empty" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+        <div class="ai-reviews-carousel__text-{{ ai_gen_id }}">
+          {{ review_text }}
+        </div>
+
+        <div class="ai-reviews-carousel__author-{{ ai_gen_id }}">
+          <div class="ai-reviews-carousel__avatar-{{ ai_gen_id }}">
+            {{ review_name | slice: 0 }}
+          </div>
+          <div class="ai-reviews-carousel__author-info-{{ ai_gen_id }}">
+            <div class="ai-reviews-carousel__author-name-{{ ai_gen_id }}">{{ review_name }}</div>
+            <div class="ai-reviews-carousel__author-date-{{ ai_gen_id }}">{{ review_date }}</div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+    {% for i in (1..6) %}
+      {% liquid
+        assign review_text_key = 'review_' | append: i | append: '_text'
+        assign review_name_key = 'review_' | append: i | append: '_name'
+        assign review_date_key = 'review_' | append: i | append: '_date'
+        assign review_rating_key = 'review_' | append: i | append: '_rating'
+
+        assign review_text = block.settings[review_text_key]
+        assign review_name = block.settings[review_name_key]
+        assign review_date = block.settings[review_date_key]
+        assign review_rating = block.settings[review_rating_key]
+      %}
+
+      <div class="ai-reviews-carousel__card-{{ ai_gen_id }}">
+        <div class="ai-reviews-carousel__rating-{{ ai_gen_id }}">
+          {% for star in (1..5) %}
+            {% if star <= review_rating %}
+              <svg class="ai-reviews-carousel__star-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            {% else %}
+              <svg class="ai-reviews-carousel__star-{{ ai_gen_id }} ai-reviews-carousel__star-{{ ai_gen_id }}--empty" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+        <div class="ai-reviews-carousel__text-{{ ai_gen_id }}">
+          {{ review_text }}
+        </div>
+
+        <div class="ai-reviews-carousel__author-{{ ai_gen_id }}">
+          <div class="ai-reviews-carousel__avatar-{{ ai_gen_id }}">
+            {{ review_name | slice: 0 }}
+          </div>
+          <div class="ai-reviews-carousel__author-info-{{ ai_gen_id }}">
+            <div class="ai-reviews-carousel__author-name-{{ ai_gen_id }}">{{ review_name }}</div>
+            <div class="ai-reviews-carousel__author-date-{{ ai_gen_id }}">{{ review_date }}</div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Carrousel d'avis clients",
+  "settings": [
+    {
+      "type": "header",
+      "content": "En-tête"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titre",
+      "default": "Ce que disent nos clients"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Sous-titre",
+      "default": "Des milliers de clients satisfaits"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Taille du titre",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "label": "Taille du sous-titre",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Avis 1"
+    },
+    {
+      "type": "textarea",
+      "id": "review_1_text",
+      "label": "Texte de l'avis",
+      "default": "Produit de qualité exceptionnelle ! Je recommande vivement. Le service client est également au top."
+    },
+    {
+      "type": "text",
+      "id": "review_1_name",
+      "label": "Nom du client",
+      "default": "Sophie Martin"
+    },
+    {
+      "type": "text",
+      "id": "review_1_date",
+      "label": "Date",
+      "default": "12 mai 2026"
+    },
+    {
+      "type": "range",
+      "id": "review_1_rating",
+      "label": "Note",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "header",
+      "content": "Avis 2"
+    },
+    {
+      "type": "textarea",
+      "id": "review_2_text",
+      "label": "Texte de l'avis",
+      "default": "Livraison rapide et produit conforme à la description. Très satisfait de mon achat !"
+    },
+    {
+      "type": "text",
+      "id": "review_2_name",
+      "label": "Nom du client",
+      "default": "Thomas Dubois"
+    },
+    {
+      "type": "text",
+      "id": "review_2_date",
+      "label": "Date",
+      "default": "10 mai 2026"
+    },
+    {
+      "type": "range",
+      "id": "review_2_rating",
+      "label": "Note",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "header",
+      "content": "Avis 3"
+    },
+    {
+      "type": "textarea",
+      "id": "review_3_text",
+      "label": "Texte de l'avis",
+      "default": "Excellent rapport qualité-prix. Je suis ravie de ma commande et je reviendrai sans hésiter."
+    },
+    {
+      "type": "text",
+      "id": "review_3_name",
+      "label": "Nom du client",
+      "default": "Marie Lefebvre"
+    },
+    {
+      "type": "text",
+      "id": "review_3_date",
+      "label": "Date",
+      "default": "8 mai 2026"
+    },
+    {
+      "type": "range",
+      "id": "review_3_rating",
+      "label": "Note",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "header",
+      "content": "Avis 4"
+    },
+    {
+      "type": "textarea",
+      "id": "review_4_text",
+      "label": "Texte de l'avis",
+      "default": "Produit magnifique et emballage soigné. Une belle découverte que je recommande à tous !"
+    },
+    {
+      "type": "text",
+      "id": "review_4_name",
+      "label": "Nom du client",
+      "default": "Lucas Bernard"
+    },
+    {
+      "type": "text",
+      "id": "review_4_date",
+      "label": "Date",
+      "default": "5 mai 2026"
+    },
+    {
+      "type": "range",
+      "id": "review_4_rating",
+      "label": "Note",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "header",
+      "content": "Avis 5"
+    },
+    {
+      "type": "textarea",
+      "id": "review_5_text",
+      "label": "Texte de l'avis",
+      "default": "Service impeccable et produit de grande qualité. Je suis très content de mon achat."
+    },
+    {
+      "type": "text",
+      "id": "review_5_name",
+      "label": "Nom du client",
+      "default": "Emma Petit"
+    },
+    {
+      "type": "text",
+      "id": "review_5_date",
+      "label": "Date",
+      "default": "3 mai 2026"
+    },
+    {
+      "type": "range",
+      "id": "review_5_rating",
+      "label": "Note",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Avis 6"
+    },
+    {
+      "type": "textarea",
+      "id": "review_6_text",
+      "label": "Texte de l'avis",
+      "default": "Très bonne expérience d'achat. Le produit correspond parfaitement à mes attentes !"
+    },
+    {
+      "type": "text",
+      "id": "review_6_name",
+      "label": "Nom du client",
+      "default": "Antoine Moreau"
+    },
+    {
+      "type": "text",
+      "id": "review_6_date",
+      "label": "Date",
+      "default": "1 mai 2026"
+    },
+    {
+      "type": "range",
+      "id": "review_6_rating",
+      "label": "Note",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "header",
+      "content": "Paramètres du carrousel"
+    },
+    {
+      "type": "range",
+      "id": "scroll_speed",
+      "label": "Vitesse de défilement",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "s",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "card_width",
+      "label": "Largeur des cartes",
+      "min": 250,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "default": 320
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Largeur sur desktop",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Style des cartes"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur de fond",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Fond des cartes",
+      "default": "#f8f8f8"
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "label": "Arrondi des cartes",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Arrondi du conteneur",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Ombre"
+    },
+    {
+      "type": "range",
+      "id": "shadow_opacity",
+      "label": "Opacité de l'ombre",
+      "min": 0,
+      "max": 0.5,
+      "step": 0.1,
+      "default": 0.1
+    },
+    {
+      "type": "range",
+      "id": "shadow_vertical",
+      "label": "Décalage vertical",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "shadow_blur",
+      "label": "Flou",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Couleurs"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Couleur du titre",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur du texte",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "star_color",
+      "label": "Couleur des étoiles",
+      "default": "#FFB74A"
+    },
+    {
+      "type": "color",
+      "id": "star_empty_color",
+      "label": "Couleur étoiles vides",
+      "default": "#E0E0E0"
+    },
+    {
+      "type": "range",
+      "id": "star_size",
+      "label": "Taille des étoiles",
+      "min": 12,
+      "max": 28,
+      "step": 2,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "review_text_size",
+      "label": "Taille du texte d'avis",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Avatar"
+    },
+    {
+      "type": "color",
+      "id": "avatar_background",
+      "label": "Fond de l'avatar",
+      "default": "#FFB74A"
+    },
+    {
+      "type": "color",
+      "id": "avatar_text_color",
+      "label": "Couleur du texte",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Carrousel d'avis clients"
+    }
+  ]
+}
 {% endschema %}
