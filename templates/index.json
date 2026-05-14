@@ -418,13 +418,6 @@
             "content": "<p>Bien sûr ! Votre satisfaction est notre priorité. Vous disposez de <strong>30 jours</strong> après la réception de votre colis pour nous renvoyer le produit s'il ne vous convient pas. Contactez notre support pour entamer la procédure de retour simple et rapide.</p>"
           }
         },
-        "item_FNkYjw": {
-          "type": "item",
-          "settings": {
-            "title": "Que faire si le produit arrive cassé ?",
-            "content": "<p>Pas d'inquiétude. Si votre article arrive endommagé, envoyez-nous une photo de l'article et du colis à notre adresse email de support. Après vérification, nous vous renverrons un <strong>article neuf immédiatement</strong>, entièrement à nos frais.</p>"
-          }
-        },
         "item_bjEB4n": {
           "type": "item",
           "settings": {
@@ -443,7 +436,7 @@
           "type": "item",
           "settings": {
             "title": "Est-ce que le produit est facile à utiliser ?",
-            "content": "<p>Oui, nous avons sélectionné ce produit pour sa simplicité. Un <strong>manuel d'utilisation simplifié</strong> est inclus dans chaque colis pour vous permettre de profiter de votre achat dès les premières minutes.</p>"
+            "content": "<p>Oui, nous avons sélectionné ce produit pour sa simplicité. </p>"
           }
         },
         "item_kFa69r": {
@@ -459,7 +452,6 @@
         "item_PUaxdd",
         "item_kUMaLC",
         "item_hTCGwG",
-        "item_FNkYjw",
         "item_bjEB4n",
         "item_NEgjPU",
         "item_NMHNMD",
