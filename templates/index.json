@@ -45,20 +45,10 @@
           "settings": {
             "text": ""
           }
-        },
-        "heading_VYVJbb": {
-          "type": "heading",
-          "settings": {
-            "text": "Donnez de la couleur à vos souvenirs",
-            "heading_tag": "h3",
-            "text_color": "",
-            "gradient": ""
-          }
         }
       },
       "block_order": [
-        "subheading_C68Mdk",
-        "heading_VYVJbb"
+        "subheading_C68Mdk"
       ],
       "name": "Rich text",
       "settings": {
