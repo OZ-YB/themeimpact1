@@ -39,17 +39,6 @@
     },
     "rich_text_CqyVJA": {
       "type": "rich-text",
-      "blocks": {
-        "subheading_C68Mdk": {
-          "type": "subheading",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "subheading_C68Mdk"
-      ],
       "name": "Rich text",
       "settings": {
         "full_width": true,
