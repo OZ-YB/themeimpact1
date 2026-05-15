@@ -137,23 +137,6 @@
     },
     "video_3bN9UY": {
       "type": "video",
-      "blocks": {
-        "play_CRJmNK": {
-          "type": "play",
-          "settings": {}
-        },
-        "heading_3ELxnY": {
-          "type": "heading",
-          "settings": {
-            "text": "Video",
-            "heading_tag": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "play_CRJmNK",
-        "heading_3ELxnY"
-      ],
       "name": "Video",
       "settings": {
         "full_width": true,
