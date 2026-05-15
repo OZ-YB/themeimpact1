@@ -51,6 +51,17 @@
     },
     "video_3bN9UY": {
       "type": "video",
+      "blocks": {
+        "subheading_yyeY74": {
+          "type": "subheading",
+          "settings": {
+            "text": "L'élégance du passé, réinventée pour aujourd’hui"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_yyeY74"
+      ],
       "name": "Video",
       "settings": {
         "full_width": true,
