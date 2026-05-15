@@ -498,6 +498,38 @@
         "button_background": "",
         "button_text_color": ""
       }
+    },
+    "video_3bN9UY": {
+      "type": "video",
+      "blocks": {
+        "play_CRJmNK": {
+          "type": "play",
+          "settings": {}
+        },
+        "heading_3ELxnY": {
+          "type": "heading",
+          "settings": {
+            "text": "Video",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "play_CRJmNK",
+        "heading_3ELxnY"
+      ],
+      "name": "Video",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "video": "shopify://files/videos/WhatsApp Video 2026-05-15 at 23.14.02 (1).mp4",
+        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
     }
   },
   "order": [
@@ -510,6 +542,7 @@
     "17776736847fe19b08",
     "1778533398b41a95db",
     "faq_DaHh6P",
-    "contact_NGm3yf"
+    "contact_NGm3yf",
+    "video_3bN9UY"
   ]
 }
