@@ -37,99 +37,34 @@
         "overlay_opacity": 0
       }
     },
-    "multi_column_jmaECe": {
-      "type": "multi-column",
+    "rich_text_CqyVJA": {
+      "type": "rich-text",
       "blocks": {
-        "item_RMdWiD": {
-          "type": "item",
+        "subheading_C68Mdk": {
+          "type": "subheading",
           "settings": {
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "content": "<p>SANS ÉCRAN</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "text": ""
           }
         },
-        "item_VWj7iy": {
-          "type": "item",
+        "heading_VYVJbb": {
+          "type": "heading",
           "settings": {
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "content": "<p>PAS DE PELLICULE</p><p></p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_hH8bWe": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "content": "<p>RENDU PELLICULE VINTAGE</p><p></p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_BDkM4n": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "content": "<p>MÉMOIRE PRÉ-CHARGÉE</p><p></p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_tp49y8": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "content": "<p>BATTERIE RECHARGEABLE</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_g4yWHC": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "content": "<p>ÉCOLOGIQUE</p><p></p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "text": "Donnez de la couleur à vos souvenirs",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
           }
         }
       },
       "block_order": [
-        "item_RMdWiD",
-        "item_VWj7iy",
-        "item_hH8bWe",
-        "item_BDkM4n",
-        "item_tp49y8",
-        "item_g4yWHC"
+        "subheading_C68Mdk",
+        "heading_VYVJbb"
       ],
-      "name": "Multi-column",
+      "name": "Rich text",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": true,
-        "gap": "medium",
-        "text_alignment": "center",
-        "subheading": "",
-        "title": "",
-        "content": "",
+        "content_width": "small",
+        "text_position": "center",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -517,7 +452,7 @@
   },
   "order": [
     "image_with_text_overlay_ApjxTB",
-    "multi_column_jmaECe",
+    "rich_text_CqyVJA",
     "video_3bN9UY",
     "rich_text_yxGrqY",
     "image_with_text_overlay_KB3dim",
