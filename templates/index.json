@@ -9,59 +9,8 @@
  */
 {
   "sections": {
-    "image_with_text_overlay_ApjxTB": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "richtext_VJVD4H": {
-          "type": "richtext",
-          "settings": {
-            "content": "<h4><strong>L'élégance du passé, réinventée pour aujourd'hui.</strong></h4>"
-          }
-        }
-      },
-      "block_order": [
-        "richtext_VJVD4H"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/Gemini_Generated_Image_60p0sv60p0sv60p0_1.png",
-        "mobile_image": "shopify://shop_images/Gemini_Generated_Image_60p0sv60p0sv60p0_1.png",
-        "mobile_text_position": "place-self-start text-start",
-        "desktop_text_position": "sm:place-self-start sm:text-start",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
-    },
-    "rich_text_CqyVJA": {
-      "type": "rich-text",
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "video_3bN9UY": {
       "type": "video",
-      "blocks": {
-        "subheading_yyeY74": {
-          "type": "subheading",
-          "settings": {
-            "text": "L'élégance du passé, réinventée pour aujourd’hui"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_yyeY74"
-      ],
       "name": "Video",
       "settings": {
         "full_width": true,
@@ -78,6 +27,15 @@
     "rich_text_yxGrqY": {
       "type": "rich-text",
       "blocks": {
+        "heading_V7d7xW": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
         "heading_GfBN7d": {
           "type": "heading",
           "settings": {
@@ -89,6 +47,7 @@
         }
       },
       "block_order": [
+        "heading_V7d7xW",
         "heading_GfBN7d"
       ],
       "name": "Rich text",
@@ -441,8 +400,6 @@
     }
   },
   "order": [
-    "image_with_text_overlay_ApjxTB",
-    "rich_text_CqyVJA",
     "video_3bN9UY",
     "rich_text_yxGrqY",
     "image_with_text_overlay_KB3dim",
