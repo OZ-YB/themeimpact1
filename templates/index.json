@@ -9,21 +9,6 @@
  */
 {
   "sections": {
-    "video_3bN9UY": {
-      "type": "video",
-      "name": "Video",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "autoplay": false,
-        "video_size": "auto",
-        "video": "shopify://files/videos/WhatsApp Video 2026-05-15 at 23.14.02 (1).mp4",
-        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
-    },
     "rich_text_yxGrqY": {
       "type": "rich-text",
       "blocks": {
@@ -58,6 +43,21 @@
         "background": "",
         "background_gradient": "",
         "text_color": ""
+      }
+    },
+    "video_3bN9UY": {
+      "type": "video",
+      "name": "Video",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "video": "shopify://files/videos/WhatsApp Video 2026-05-15 at 23.14.02 (1).mp4",
+        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
       }
     },
     "image_with_text_overlay_KB3dim": {
@@ -400,8 +400,8 @@
     }
   },
   "order": [
-    "video_3bN9UY",
     "rich_text_yxGrqY",
+    "video_3bN9UY",
     "image_with_text_overlay_KB3dim",
     "featured_product_de3aMb",
     "1777145795d2c13309",
