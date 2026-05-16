@@ -60,6 +60,46 @@
         "overlay_opacity": 0
       }
     },
+    "rich_text_ATgpVT": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_FJTytg": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_37YRFF": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_8zTFDp": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_FJTytg",
+        "heading_37YRFF",
+        "richtext_8zTFDp"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "image_with_text_overlay_KB3dim": {
       "type": "image-with-text-overlay",
       "name": "Image with text overlay",
@@ -402,6 +442,7 @@
   "order": [
     "rich_text_yxGrqY",
     "video_3bN9UY",
+    "rich_text_ATgpVT",
     "image_with_text_overlay_KB3dim",
     "featured_product_de3aMb",
     "1777145795d2c13309",
