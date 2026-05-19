@@ -15,6 +15,7 @@
     "block_border_radius": 24,
     "block_shadow_opacity": 10,
     "block_shadow_vertical_offset": 18,
+    "button_style": "fill",
     "background": "#ffffff",
     "text_color": "#1a1a1a",
     "header_background": "#f0f0f0",
@@ -38,19 +39,7 @@
     "cart_icon": "shopping_basket",
     "checkout_accent_color": "#f0c417",
     "checkout_button_color": "#1a1a1a",
-    "content_for_index": [],
-    "blocks": {
-      "9696655121035291526": {
-        "type": "shopify://apps/rapi/blocks/app-embed/99617c17-a32b-4e70-a883-7a155610d032",
-        "disabled": false,
-        "settings": {}
-      },
-      "11532412952436166569": {
-        "type": "shopify://apps/loox-reviews/blocks/loox-inject/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-        "disabled": false,
-        "settings": {}
-      }
-    }
+    "content_for_index": []
   },
   "presets": {
     "Sound": {
