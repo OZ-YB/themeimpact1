@@ -305,6 +305,7 @@
         "logo_Ve4VK6": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/Minimalist_Hospital_and_Medical_Health_Logo_2.png",
             "logo_width": 120,
             "link": ""
           }
