@@ -17,30 +17,16 @@
     "image_with_text_overlay_NDqzXK": {
       "type": "image-with-text-overlay",
       "blocks": {
-        "subheading_thBKGp": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
         "heading_Vf4UNi": {
           "type": "heading",
           "settings": {
-            "text": "Image with text overlay",
+            "text": "Asseyez-vous enfin confortablement.",
             "heading_tag": "h1"
-          }
-        },
-        "richtext_PBtrqJ": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
           }
         }
       },
       "block_order": [
-        "subheading_thBKGp",
-        "heading_Vf4UNi",
-        "richtext_PBtrqJ"
+        "heading_Vf4UNi"
       ],
       "name": "Image with text overlay",
       "settings": {
@@ -48,83 +34,12 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/Gemini_Generated_Image_rxe48qrxe48qrxe4.png",
+        "image": "shopify://shop_images/Gemini_Generated_Image_nhs0ixnhs0ixnhs0.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30
-      }
-    },
-    "logo_list_iqrMV8": {
-      "type": "logo-list",
-      "blocks": {
-        "logo_irPBFQ": {
-          "type": "logo",
-          "settings": {
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_jM8AMP": {
-          "type": "logo",
-          "settings": {
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_rgJGKU": {
-          "type": "logo",
-          "settings": {
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_CDYdVU": {
-          "type": "logo",
-          "settings": {
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_4r9E4U": {
-          "type": "logo",
-          "settings": {
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_jazj9U": {
-          "type": "logo",
-          "settings": {
-            "logo_width": 120,
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_irPBFQ",
-        "logo_jM8AMP",
-        "logo_rgJGKU",
-        "logo_CDYdVU",
-        "logo_4r9E4U",
-        "logo_jazj9U"
-      ],
-      "name": "Logo list",
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "title": "Logo list",
-        "content": "",
-        "text_alignment": "start",
-        "items_per_row": 5,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "logo_item_background": "",
-        "logo_item_border": ""
       }
     },
     "slideshow_WmNJkr": {
@@ -133,6 +48,7 @@
         "image_EWXtMU": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_mbadbymbadbymbad.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -153,6 +69,7 @@
         "image_8RwRNU": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_oadk10oadk10oadk.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -687,7 +604,6 @@
   "order": [
     "main",
     "image_with_text_overlay_NDqzXK",
-    "logo_list_iqrMV8",
     "slideshow_WmNJkr",
     "rich_text_qG4frf",
     "video_VT39cg",
