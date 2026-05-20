@@ -119,6 +119,12 @@
     "featured_product_de3aMb": {
       "type": "featured-product",
       "blocks": {
+        "rapi_rapi_bundle_aaG3tc": {
+          "type": "shopify://apps/rapi/blocks/rapi-bundle/99617c17-a32b-4e70-a883-7a155610d032",
+          "settings": {
+            "product": "{{ section.settings.product }}"
+          }
+        },
         "title_qyTJ6L": {
           "type": "title",
           "settings": {
@@ -169,12 +175,6 @@
           "type": "quantity_selector",
           "settings": {}
         },
-        "rapi_rapi_bundle_JeDEXP": {
-          "type": "shopify://apps/rapi/blocks/rapi-bundle/99617c17-a32b-4e70-a883-7a155610d032",
-          "settings": {
-            "product": "camera-sans-ecran"
-          }
-        },
         "liquid_7nDKxw": {
           "type": "liquid",
           "settings": {
@@ -198,6 +198,7 @@
         }
       },
       "block_order": [
+        "rapi_rapi_bundle_aaG3tc",
         "title_qyTJ6L",
         "badges_cGhNkr",
         "price_3zxcBP",
@@ -206,7 +207,6 @@
         "description_XXxNaj",
         "variant_picker_QrwgaU",
         "quantity_selector_ca6MJW",
-        "rapi_rapi_bundle_JeDEXP",
         "liquid_7nDKxw",
         "buy_buttons_zPzqD7",
         "pickup_availability_zHzn7K"
@@ -228,6 +228,28 @@
         "text_color": "#1a1a1a",
         "input_background": "#ffb74a",
         "input_text_color": "#f2f2f2"
+      }
+    },
+    "apps_wdByym": {
+      "type": "apps",
+      "blocks": {
+        "rapi_rapi_bundle_JnxNY9": {
+          "type": "shopify://apps/rapi/blocks/rapi-bundle/99617c17-a32b-4e70-a883-7a155610d032",
+          "settings": {
+            "product": "camera-sans-ecran"
+          }
+        }
+      },
+      "block_order": [
+        "rapi_rapi_bundle_JnxNY9"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "1777145795d2c13309": {
@@ -467,6 +489,7 @@
     "rich_text_ATgpVT",
     "image_with_text_overlay_KB3dim",
     "featured_product_de3aMb",
+    "apps_wdByym",
     "1777145795d2c13309",
     "17776736847fe19b08",
     "1778533398b41a95db",
